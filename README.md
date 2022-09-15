@@ -6,7 +6,7 @@
 
 </div>
 
-> ## 💡 Project Outline <br> 프로젝트 개요
+> ## 💡 Project Outline <br> &nbsp;&nbsp;프로젝트 개요
 
 **`Practice Redux` with React** by making TO DO LIST App
 
@@ -14,24 +14,24 @@
 
 <br>
 
-> ## 📖 Index <br> 목차
+> ## 📖 Index <br> &nbsp;&nbsp;목차
 
-[Run this Project <br> 프로젝트 실행](#-run-this-project--프로젝트-실행)
+[Run this Project <br> 프로젝트 실행](#-run-this-project----프로젝트-실행)
 
-[Project Introduction <br> 프로젝트 소개](#-project-introduction--프로젝트-소개)
- - [Tech Stacks <br> 사용기술](#-tech-stacks--사용기술)
- - [Implemented Features <br> 구현기능](#-implemented-features--구현-기능)
- - [Directory Structure <br> 폴더구조](#-directory-structure--폴더-구조)
- - [Reasons for using this packages <br> 패키지 사용 근거](#-reasons-for-using-this-packages-librarys-etc--패키지-사용-근거라이브러리-등)
+[Project Introduction <br> 프로젝트 소개](#-project-introduction----프로젝트-소개)
+ - [Tech Stacks <br> 사용기술](#-tech-stacks----사용기술)
+ - [Implemented Features <br> 구현기능](#-implemented-features----구현-기능)
+ - [Directory Structure <br> 폴더구조](#-directory-structure----폴더-구조)
+ - [Reasons for using this packages <br> 패키지 사용 근거](#-reasons-for-using-this-packages-librarys-etc----패키지-사용-근거라이브러리-등)
 
-[Retrospect <br> 회고](#-retrospect--회고)
- - [Learning <br> 배운 것](#learning--배운-것)
- - [Want to fix <br> 고치고 싶은 것](#want-to-fix--고치고-싶은-것)
- - [What I think i need to study more <br> 더 공부해야 한다고 생각하는 것](#what-i-think-i-need-to-study-more--더-공부해야-한다고-생각하는-것)
+[Retrospect <br> 회고](#-retrospect----회고)
+ - [Learning <br> 배운 것](#learning----배운-것)
+ - [Want to fix <br> 고치고 싶은 것](#want-to-fix----고치고-싶은-것)
+ - [What I think i need to study more <br> 더 공부해야 한다고 생각하는 것](#what-i-think-i-need-to-study-more----더-공부해야-한다고-생각하는-것)
 
 <br>
 
-> ## ⚙ Run This Project <br>   프로젝트 실행
+> ## ⚙ Run This Project <br> &nbsp;&nbsp;프로젝트 실행
 
 - Just Click This Link => [Go To App](https://todolist-jaeny007.vercel.app/)
 
@@ -55,16 +55,16 @@ npm start
 
 <br>
 
-> ## 🛠 Project Introduction <br>   프로젝트 소개
+> ## 🛠 Project Introduction <br> &nbsp;&nbsp;프로젝트 소개
 
-### 🖥 Tech Stacks <br>   사용기술
+### 🖥 Tech Stacks <br> &nbsp;&nbsp;사용기술
 
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=TypeScript&logoColor=white"/> <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"/> <img src="https://img.shields.io/badge/Create-React-App-09D3AC?style=flat-square&logo=createreactapp&logoColor=white"/> <img src="https://img.shields.io/badge/React-Router-Dom-CA4245?style=flat-square&logo=reactrouter&logoColor=white"/> <br> <img src="https://img.shields.io/badge/Axios-5A29E4?style=flat-square&logo=Axios&logoColor=white"/> <img alt="React-Query" src="https://img.shields.io/badge/React_Query-FF4154?&style=flat-square&logo=reactquery&logoColor=white" /> <img src="https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=Redux&logoColor=white"/> <img alt="Styled Components" src="https://img.shields.io/badge/-Styled_Components-db7092?style=flat-square&logo=styled-components&logoColor=white" /> <br> <img src="https://img.shields.io/badge/Npm-CB3837?style=flat-square&logo=npm&logoColor=white"/> <img src="https://img.shields.io/badge/Git_Hub-181717?style=flat-square&logo=GitHub&logoColor=white"/> <img src="https://img.shields.io/badge/Vercel-000?style=flat-square&logo=Vercel&logoColor=white"/>
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white"/> <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white"/> <img src="https://img.shields.io/badge/Create_React_App-09D3AC?style=for-the-badge&logo=createreactapp&logoColor=white"/> <img src="https://img.shields.io/badge/React_Router_Dom-CA4245?style=for-the-badge&logo=React-Router&logoColor=white"/> <br> <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=Axios&logoColor=white"/> <img alt="React-Query" src="https://img.shields.io/badge/React_Query-FF4154?&style=for-the-badge&logo=reactquery&logoColor=white" /> <img src="https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=Redux&logoColor=white"/> <img alt="Styled Components" src="https://img.shields.io/badge/-Styled_Components-db7092?style=for-the-badge&logo=styled-components&logoColor=white" /> <br> <img src="https://img.shields.io/badge/Npm-CB3837?style=for-the-badge&logo=npm&logoColor=white"/> <img src="https://img.shields.io/badge/Git_Hub-181717?style=for-the-badge&logo=GitHub&logoColor=white"/> <img src="https://img.shields.io/badge/Vercel-000?style=for-the-badge&logo=Vercel&logoColor=white"/>
 
 
 <br>
 
-### 🕹 Implemented features <br>  구현 기능
+### 🕹 Implemented features <br> &nbsp;&nbsp;구현 기능
 
 - [ ] Main Page / 메인 페이지
 
@@ -141,7 +141,7 @@ npm start
 
 ---
 
-### 📁 Directory Structure <br>   폴더 구조
+### 📁 Directory Structure <br> &nbsp;&nbsp;폴더 구조
 
 ```markdown
 src
@@ -186,32 +186,32 @@ src
 
 ---
 
-### 🎨 Reasons for using this packages (Librarys etc) <br>  패키지 사용 근거(라이브러리 등)
+### 🎨 Reasons for using this packages (Librarys etc) <br> &nbsp;&nbsp;패키지 사용 근거(라이브러리 등)
 
-- **`CRA`** : Create-React-App
+- **`CRA`** : Create-React-App <br>
   For build faster react app <br> 빠른 앱 빌드를 위해 사용
 
-- **`React` & `React-Router-Dom`**
+- **`React` & `React-Router-Dom`** <br>
   For build Single-Page-Application <br> SPA 앱 빌드를 위해 사용
 
-- **`Axios` & `React-Query`**
+- **`Axios` & `React-Query`** <br>
   For server state management : Axios for instance, React-Query for CRUD <br> 서버 상태관리를 위해 사용 : Axios는 인스턴스 생성, React-Query는 데이터 CRUD를 위해 사용
 
-- **`Styled-Components`**
+- **`Styled-Components`** <br>
   For CSS management per component <br> 컴포넌트 단위의 CSS 관리를 위해 사용
 
-- **`Vercel`**
+- **`Vercel`** <br>
   For Deploy the app <br> 앱 배포를 위해 사용
 
-> ## 🏷 Retrospect <br>   회고
+> ## 🏷 Retrospect <br> &nbsp;&nbsp;회고
 
-### Learning <br>   배운 것
+### Learning <br> &nbsp;&nbsp;배운 것
 - React로 앱만들기!
 - Vercel로 배포!
 
-### Want to fix <br>  고치고 싶은 것
+### Want to fix <br> &nbsp;&nbsp;고치고 싶은 것
 - 이제 시작이다!
 - 아직 아무것도 안함
 
-### What i think i need to study more <br>  더 공부해야 한다고 생각하는 것
+### What i think i need to study more <br> &nbsp;&nbsp;더 공부해야 한다고 생각하는 것
 - 모든 기술을 다 잘 알고 사용해야 한다!
