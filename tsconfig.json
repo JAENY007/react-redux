@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -18,9 +14,18 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": "./src",
+    "paths": {
+      "app.feature/*": ["app.feature/*"],
+      "root.layout/*": ["root.layout/*"],
+      "root.components/*":["root.components/*"],
+      "root.modules/*":["root.modules/*"],
+      "root.styled/*":["root.styled/*"],
+      "root.store/*":["root.store/*"],
+      "pages/*": ["pages/*"]
+    },
   },
-  "include": [
-    "src"
-  ]
+  "include": ["react-app-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
 }
