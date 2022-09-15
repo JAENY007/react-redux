@@ -2,14 +2,13 @@ import 'styled-components';
 
 declare module "styled-components" {
     export interface DefaultTheme {
-        black: {
-            veryDark: string,
-            darker: string,
-            lighter: string,
+        darker: {
+            black: string,
+            white: string,
         },
-        white: {
-            lighter: string
-            darker: string
+        lighter: {
+            white: string
+            black: string
         }
     }
 }

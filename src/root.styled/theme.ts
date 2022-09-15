@@ -1,13 +1,13 @@
 import { DefaultTheme } from 'styled-components';
 
 export const theme: DefaultTheme = {
-  black: {
+  darker: {
       veryDark: "#141414",
-      darker: "#181818",
-      lighter: "#2F2F2F"
+      black: "#181818",
+      white: "#2F2F2F"
   },
-  white: {
-      lighter: "#fff",
-      darker: "#e5e5e5"
+  lighter: {
+      white: "#fff",
+      black: "#e5e5e5"
   }
 }
