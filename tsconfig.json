@@ -15,15 +15,17 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "baseUrl": "./src",
+    "baseUrl": "./src/",
     "paths": {
       "app.feature/*": ["app.feature/*"],
-      "root.layout/*": ["root.layout/*"],
-      "root.components/*":["root.components/*"],
+      "app.layout/*": ["app.layout/*"],
+      "app.components/*":["app.components/*"],
       "root.modules/*":["root.modules/*"],
       "root.styled/*":["root.styled/*"],
       "root.store/*":["root.store/*"],
-      "pages/*": ["pages/*"]
+      "pages/*": ["pages/*"],
+      "@AppMyPage/*": ["app.feature/myPage/*"],
+      "@AppToDo/*": ["app.feature/todo/*"]
     },
   },
   "include": ["react-app-env.d.ts", "**/*.ts", "**/*.tsx"],
