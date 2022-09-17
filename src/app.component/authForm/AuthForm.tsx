@@ -1,4 +1,7 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useMutaitonSignIn } from 'root.modules/auth/useMutationSignIn';
+import { useMutaitonSignUp } from 'root.modules/auth/useMutationSignUp';
 import styled from 'styled-components';
 
 const AuthForm = () => {
@@ -6,14 +9,34 @@ const AuthForm = () => {
   const [password, setPassword] = useState('');
   const [isLogin, setIsLogin] = useState(true);
 
+  const { mutate: mutateSignIn } = useMutaitonSignIn();
+  const { mutate: mutateSignUp } = useMutaitonSignUp();
+  const navigate = useNavigate();
+
   const handleChangeEmail = (event: any) => {
     setEmail(event.target.value);
   };
   const handleChangePassword = (event: any) => {
     setPassword(event.target.value);
   };
-  const handleLoginFormSubmit = (event: any) => {
+  const handleLoginFormSubmit = async (event: any) => {
     event.preventDefault();
+    const loginForm = {
+      email: email,
+      password: password,
+    };
+    const registerForm = {
+      name: 'JY',
+      age: 20,
+      ...loginForm,
+    };
+    if (isLogin) {
+      await mutateSignIn(registerForm);
+      navigate('/todo', { replace: true });
+    } else {
+      await mutateSignUp(registerForm);
+      setIsLogin(true);
+    }
   };
 
   return (
