@@ -5,6 +5,7 @@ import Footer from 'app.layout/Footer';
 import Main from 'pages/main';
 import SignIn from 'pages/signin';
 import SignUp from 'pages/signup';
+import ToDoPage from 'pages/todo';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Main />}></Route>
+        <Route path="/todo" element={<ToDoPage />}></Route>
         <Route path="/signin" element={<SignIn />}></Route>
         <Route path="/signup" element={<SignUp />}></Route>
       </Routes>

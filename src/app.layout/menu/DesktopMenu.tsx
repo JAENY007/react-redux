@@ -1,11 +1,11 @@
-import LoginButton from 'app.component/buttons/LoginButton';
-import LogoutButton from 'app.component/buttons/LogoutButton';
-import SignUpButton from 'app.component/buttons/SignUpButton';
 import styled from 'styled-components';
+import LoginButton from 'app.component/buttons/LoginButton';
+import LocateToDoListButton from 'app.component/buttons/LocateToDoListButton';
 
 const DesktopMenu = () => {
   return (
     <ListWrapper>
+      <li>{<LocateToDoListButton />}</li>
       <li>{<LoginButton />}</li>
     </ListWrapper>
   );
