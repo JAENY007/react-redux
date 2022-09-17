@@ -1,4 +1,4 @@
-import LoginButton from 'app.component/LoginButton';
+import LoginButton from 'app.component/buttons/LoginButton';
 
 const Header = () => {
   return (

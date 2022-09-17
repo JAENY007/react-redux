@@ -57,7 +57,6 @@ npm start
 
 > ## 🛠 Project Introduction <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;프로젝트 소개
 
-<br>
 
 ### 🖥 Tech Stacks <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;사용기술
 

@@ -4,11 +4,11 @@ declare module "styled-components" {
     export interface DefaultTheme {
         darker: {
             black: string,
-            white: string,
+            white: string
         },
         lighter: {
+            black: string,
             white: string
-            black: string
         }
     }
 }
