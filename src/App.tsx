@@ -6,7 +6,6 @@ import Main from 'pages/main';
 import SignIn from 'pages/signin';
 import SignUp from 'pages/signup';
 
-
 function App() {
   return (
     <Router>

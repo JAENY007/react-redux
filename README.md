@@ -67,76 +67,33 @@ npm start
 
 ### 🕹 Implemented features <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;구현 기능
 
-- [ ] Main Page / 메인 페이지
-
 <div align="center">
 
-</div>
+
+- [ ] Main Page / 메인 페이지
 
 - [ ] SignUp / 회원가입
 
-<div align="center">
-
-</div>
-
 - [ ] SignIn / 로그인
-
-<div align="center">
-
-</div>
 
 - [ ] Get To Do List / 투두리스트 가져오기
 
-<div align="center">
-
-</div>
-
 - [ ] Create To Do / 투두리스트 만들기
-
-<div align="center">
-
-</div>
 
 - [ ] Update To Do / 투두리스트 수정하기
 
-<div align="center">
-
-</div>
-
 - [ ] Delete To Do / 투두리스트 지우기
-
-<div align="center">
-
-</div>
 
 - [ ] User Page / 유저 페이지
 
-<div align="center">
-
-</div>
-
 - [ ] Update User Info / 개인정보 수정
-
-<div align="center">
-
-</div>
 
 - [ ] Upload User Avatar(Image) / 유저 이미지 업로드
 
-<div align="center">
-
-</div>
-
 - [ ] Delete User Avatar(Image) / 유저 이미지 삭제
-
-<div align="center">
-
-</div>
-
 
 - [ ] Delete User Account / 회원탈퇴(유저 삭제)
 
-<div align="center">
 
 </div>
 

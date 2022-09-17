@@ -7,7 +7,6 @@ const DesktopMenu = () => {
   return (
     <ListWrapper>
       <li>{<LoginButton />}</li>
-      <li>{<SignUpButton />}</li>
     </ListWrapper>
   );
 };

@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
 
 ${reset}
 
-html {
+html, button {
   font-family: 'Cafe24SsurroundAir';
 }
 

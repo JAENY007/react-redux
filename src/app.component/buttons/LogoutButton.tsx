@@ -5,7 +5,7 @@ const LogoutButton = () => {
 
   const handleClickButton = async () => {
     // await 로그아웃 로직
-    navigate('/');
+    navigate('/', { replace: true });
   };
 
   return <button>로그아웃</button>;

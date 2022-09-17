@@ -6,7 +6,7 @@ const Header = () => {
   const navigate = useNavigate();
 
   const handleClickTitle = () => {
-    navigate('/main');
+    navigate('/');
   };
 
   return (
@@ -32,7 +32,7 @@ const StyledHeader = styled.header`
 
   .title {
     font-size: 2.5rem;
-    font-weight: 600;
+    font-weight: 900;
     margin-bottom: 1rem;
 
     :hover {
