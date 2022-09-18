@@ -14,8 +14,8 @@ export const useMutaitonSignIn = () => {
   const queryClient = useQueryClient();
   const querykey = API_SIGN_IN;
 
-  const mutate = useMutation((payload: any) => {
+  const { data, isLoading, mutate } = useMutation((payload: any) => {
     return requestSignIn({ payload, querykey });
   });
-  return mutate;
+  return { data, isLoading, mutate };
 };

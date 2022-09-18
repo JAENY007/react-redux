@@ -1,5 +1,5 @@
+import AuthForm from 'app.layout/authForm/AuthForm';
 import styled from 'styled-components';
-import AuthForm from 'app.component/authForm/AuthForm';
 
 const SignIn = () => {
   return (
