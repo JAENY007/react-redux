@@ -23,6 +23,7 @@
       "root.modules/*":["root.modules/*"],
       "root.styled/*":["root.styled/*"],
       "root.store/*":["root.store/*"],
+      "root.hooks/*":["root.hooks/*"],
       "pages/*": ["pages/*"],
       "@AppMyPage/*": ["app.feature/myPage/*"],
       "@AppToDo/*": ["app.feature/todo/*"]
