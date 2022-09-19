@@ -7,9 +7,9 @@ import { useDispatch } from 'react-redux';
 
 const AuthForm = () => {
   const emailInputRef = useRef<HTMLInputElement>(null);
-  const [password, setPassword] = useState('');
-  const [name, setName] = useState('');
-  const [age, setAge] = useState(0);
+  const passwordInputRef = useRef<HTMLInputElement>(null);
+  const nameInputRef = useRef<HTMLInputElement>(null);
+  const ageInputRef = useRef<HTMLInputElement>(null);
   const [isLogin, setIsLogin] = useState(true);
 
   const { data: tokenData, mutate: mutateSignIn } = useMutaitonSignIn();
@@ -17,28 +17,24 @@ const AuthForm = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const handleChangePassword = (event: any) => {
-    setPassword(event.target.value);
-  };
-  const handleChangeName = (event: any) => {
-    setName(event.target.value);
-  };
-
-  const handleChangeAge = (event: any) => {
-    setAge(Number(event.target.value));
-  };
   const handleLoginFormSubmit = async (event: any) => {
     event.preventDefault();
     const enteredEmail = emailInputRef.current?.value;
+    const enteredPassword = passwordInputRef.current?.value;
+    const enteredName = nameInputRef.current?.value;
+    const enteredAge = Number(ageInputRef.current?.value);
+
     const loginForm = {
       email: enteredEmail,
-      password: password,
+      password: enteredPassword,
     };
+
     const registerForm = {
-      name: name,
+      name: enteredName,
       ...loginForm,
-      age: age,
+      age: enteredAge,
     };
+
     if (isLogin) {
       await mutateSignIn(loginForm);
       sessionStorage.setItem('loginToken', tokenData?.token);
@@ -57,21 +53,11 @@ const AuthForm = () => {
           <>
             <div className="form-input">
               <label htmlFor="name">이름</label>
-              <input
-                type="text"
-                id="name"
-                required
-                onChange={handleChangeName}
-              />
+              <input type="text" id="name" required ref={nameInputRef} />
             </div>
             <div className="form-input">
               <label htmlFor="age">나이</label>
-              <input
-                type="number"
-                id="age"
-                required
-                onChange={handleChangeAge}
-              />
+              <input type="number" id="age" required ref={ageInputRef} />
             </div>
           </>
         )}
@@ -85,7 +71,7 @@ const AuthForm = () => {
             type="password"
             id="password"
             required
-            onChange={handleChangePassword}
+            ref={passwordInputRef}
           />
         </div>
       </div>
