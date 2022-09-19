@@ -1,12 +1,12 @@
 import styled from 'styled-components';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useMutaitonSignIn } from 'root.modules/auth/useMutationSignIn';
 import { useMutaitonSignUp } from 'root.modules/auth/useMutationSignUp';
 import { useDispatch } from 'react-redux';
 
 const AuthForm = () => {
-  const [email, setEmail] = useState('');
+  const emailInputRef = useRef<HTMLInputElement>(null);
   const [password, setPassword] = useState('');
   const [name, setName] = useState('');
   const [age, setAge] = useState(0);
@@ -17,9 +17,6 @@ const AuthForm = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const handleChangeEmail = (event: any) => {
-    setEmail(event.target.value);
-  };
   const handleChangePassword = (event: any) => {
     setPassword(event.target.value);
   };
@@ -32,8 +29,9 @@ const AuthForm = () => {
   };
   const handleLoginFormSubmit = async (event: any) => {
     event.preventDefault();
+    const enteredEmail = emailInputRef.current?.value;
     const loginForm = {
-      email: email,
+      email: enteredEmail,
       password: password,
     };
     const registerForm = {
@@ -79,12 +77,7 @@ const AuthForm = () => {
         )}
         <div className="form-input">
           <label htmlFor="email">이메일</label>
-          <input
-            type="email"
-            id="email"
-            required
-            onChange={handleChangeEmail}
-          />
+          <input type="email" id="email" required ref={emailInputRef} />
         </div>
         <div className="form-input">
           <label htmlFor="password">비밀번호</label>
