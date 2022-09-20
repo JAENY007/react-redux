@@ -48,6 +48,7 @@ const AuthForm = () => {
   return (
     <StyledLoginForm onSubmit={handleLoginFormSubmit}>
       <h2 className="page-title">{isLogin ? '로그인' : '회원가입'}</h2>
+      <hr className="divider" />
       <div className="login-form">
         {!isLogin && (
           <>
@@ -83,13 +84,18 @@ const AuthForm = () => {
       {isLogin ? (
         <p>
           아이디가 없으신가요?{' '}
-          <button onClick={() => setIsLogin(false)}>회원가입</button> 먼저
-          해주세요!
+          <button className="signform-link" onClick={() => setIsLogin(false)}>
+            회원가입
+          </button>{' '}
+          먼저 해주세요!
         </p>
       ) : (
         <p>
           아이디가 이미 있으신가요?{' '}
-          <button onClick={() => setIsLogin(true)}>로그인</button> 해주세요!
+          <button className="signform-link" onClick={() => setIsLogin(true)}>
+            로그인
+          </button>{' '}
+          해주세요!
         </p>
       )}
     </StyledLoginForm>
@@ -109,19 +115,31 @@ const StyledLoginForm = styled.form`
     font-weight: 600;
     margin-bottom: 1rem;
   }
+  .divider {
+    width: 80%;
+    border-top: 2px solid #9e9e9e;
+    margin: 0 0 1rem 0;
+  }
 
   .login-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-bottom: 1rem;
 
     .form-input {
       width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      margin-bottom: 1rem;
+
+      > input {
+        width: calc(65% - 10px);
+        padding: 0.3rem;
+        border: 1.3px solid #9c9c9c;
+        border-radius: 0.3rem;
+      }
     }
   }
   .submit-button {
@@ -134,5 +152,17 @@ const StyledLoginForm = styled.form`
     border-radius: 0.3rem;
     background: #ff9e9e;
     color: #fff;
+  }
+  .signform-link {
+    background: transparent;
+    color: #db9eff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+
+    :hover {
+      cursor: pointer;
+      color: #ff9e9e;
+    }
   }
 `;

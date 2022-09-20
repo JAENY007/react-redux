@@ -1,7 +1,7 @@
 import AuthForm from 'app.layout/authForm/AuthForm';
 import styled from 'styled-components';
 
-const SignIn = () => {
+const Sign = () => {
   return (
     <StyledSection>
       <AuthForm />
@@ -9,7 +9,7 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default Sign;
 
 const StyledSection = styled.section`
   display: flex;
